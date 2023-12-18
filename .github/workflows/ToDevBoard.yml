@@ -1,0 +1,21 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  issues:
+    types:
+      - labeled
+
+  # Allows you to run this workflow manually from the Actions tab
+jobs:
+  move-to-project-card:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: alex-page/github-project-automation-plus@7ffb872c64bd809d23563a130a0a97d01dfa8f43
+        with:
+          project: Expanse Development
+          column: The List
+          repo-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
