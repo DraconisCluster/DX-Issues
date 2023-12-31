@@ -2,7 +2,7 @@
 name: Issues
 about: Primary template for new issues
 title: ''
-labels: Triage
+labels: ''
 assignees: ''
 
 ---
